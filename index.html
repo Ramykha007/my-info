@@ -1194,6 +1194,37 @@ a {
 
 
 
+
+
+/* (A) FIXED WRAPPER */
+
+ 
+/* (B) MOVING TICKER WRAPPER */
+.hmove { display: flex; }
+
+/* (C) ITEMS - INTO A LONG HORIZONTAL ROW */
+.hitem {
+  flex-shrink: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  text-align: center;
+ position: absolute;
+ color: white;
+ top: -20px;
+ font-size: 30px;
+
+  
+}
+ 
+/* (D) ANIMATION - MOVE ITEMS FROM RIGHT TO LEFT */
+/* 4 ITEMS -400%, CHANGE THIS IF YOU ADD/REMOVE ITEMS */
+@keyframes tickerh {
+  0% { transform: translate3d(100%, 0, 0); }
+  100% { transform: translate3d(-400%, 0, 0); }
+}
+.hmove { animation: tickerh linear 45s infinite; }
+.hmove:hover { animation-play-state: paused; }
 </style>
 <link href='https://www.blogger.com/dyn-css/authorization.css?targetBlogID=3802279730748144928&amp;zx=8c8f0621-fe18-4369-946b-28f1a3b2c966' media='none' onload='if(media!=&#39;all&#39;)media=&#39;all&#39;' rel='stylesheet'/><noscript><link href='https://www.blogger.com/dyn-css/authorization.css?targetBlogID=3802279730748144928&amp;zx=8c8f0621-fe18-4369-946b-28f1a3b2c966' rel='stylesheet'/></noscript>
 
@@ -1461,7 +1492,10 @@ a {
 </section>
 <a class="button44" href="mailto:ramykhaled202@gmail.com" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/323/323324.png" alt="HTML tutorial" style="width:62px;height:62px; "></a>&nbsp;&nbsp;
 </main>
+<div class="hwrap"><div class="hmove">
+  <div class="hitem">All Copyrights Reserved Ramy khaled</div>
 
+</div></div>
 <!-- ########## SONG ########## -->
 <!-- ########## SETTING ########## -->
 <script>
