@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 
 <!-- - This Project Created & Developed By : Mohamed Nader ( MEMES ) - - Mobile : 01126106073, Facebook : http://facebook.com/ramybob808 - --><html xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
@@ -164,40 +162,139 @@ a {
     margin-top: 10px;
     font-weight: bold;
 }
-.mysocial {
+.mysocial-modern {
     position: absolute;
     bottom: 20px;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
 }
-.mysocial li {
-    display: inline-block;
+
+.social-icon-modern {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    color: #fff !important;
+    font-size: 18px;
+    text-decoration: none !important;
+    transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
-.mysocial li a {
-    background: #747474;
-    display: inline-block;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    padding: 9px 10px 5px 10px;
-    cursor: pointer;
-    -o-transition: .9s;
-    -ms-transition: .9s;
-    -moz-transition: .9s;
-    -webkit-transition: .9s;
-    transition: .9s;
+
+.social-icon-modern i {
+    background: transparent !important;
+    color: #fff !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: auto !important;
+    height: auto !important;
+    line-height: normal !important;
 }
-.mysocial li a:hover {
-    font-size: 25px;
-    padding: 9px 15px 5px 15px;
-    background: #363636;
+
+/* Default state brand colors */
+.social-icon-modern.facebook {
+    background: #1877F2;
+    border-color: #1877F2;
 }
-.facebook:hover { background: #3b5999 !important; }
-.twitter:hover { background: #55acee !important; }
-.instagram:hover { background: #e4405f !important; }
-.youtube:hover { background: #cd201f !important; }
-.github:hover { background: #34465d !important; }
-.behance:hover { background: #131418 !important; }
-.linkedin:hover { background: #0077B5 !important; }
-.blogger:hover { background: #f57d00 !important; }
+.social-icon-modern.twitter {
+    background: #000000;
+    border-color: #222;
+}
+.social-icon-modern.instagram {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    border-color: transparent;
+}
+.social-icon-modern.whatsapp {
+    background: #25D366;
+    border-color: #25D366;
+}
+.social-icon-modern.telegram {
+    background: #0088cc;
+    border-color: #0088cc;
+}
+.social-icon-modern.youtube {
+    background: #FF0000;
+    border-color: #FF0000;
+}
+.social-icon-modern.linkedin {
+    background: #0077B5;
+    border-color: #0077B5;
+}
+.social-icon-modern.paypal {
+    background: #003087;
+    border-color: #003087;
+}
+.social-icon-modern.outlook {
+    background: #0078d4;
+    border-color: #0078d4;
+}
+.social-icon-modern.gmail {
+    background: #EA4335;
+    border-color: #EA4335;
+}
+
+/* Hover state: scale up, translate up, and add glowing shadows */
+.social-icon-modern:hover {
+    transform: translateY(-5px) scale(1.25);
+    color: #fff !important;
+}
+
+.social-icon-modern.facebook:hover {
+    box-shadow: 0 8px 25px rgba(24, 119, 242, 0.6);
+    filter: brightness(1.15);
+}
+.social-icon-modern.twitter:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+    filter: brightness(1.3);
+}
+.social-icon-modern.instagram:hover {
+    box-shadow: 0 8px 25px rgba(220, 39, 67, 0.6);
+    filter: brightness(1.15);
+}
+.social-icon-modern.whatsapp:hover {
+    box-shadow: 0 8px 25px rgba(37, 211, 102, 0.6);
+    filter: brightness(1.15);
+}
+.social-icon-modern.telegram:hover {
+    box-shadow: 0 8px 25px rgba(0, 136, 204, 0.6);
+    filter: brightness(1.15);
+}
+.social-icon-modern.youtube:hover {
+    box-shadow: 0 8px 25px rgba(255, 0, 0, 0.6);
+    filter: brightness(1.15);
+}
+.social-icon-modern.linkedin:hover {
+    box-shadow: 0 8px 25px rgba(0, 119, 181, 0.6);
+    filter: brightness(1.15);
+}
+.social-icon-modern.paypal:hover {
+    box-shadow: 0 8px 25px rgba(0, 48, 135, 0.6);
+    filter: brightness(1.15);
+}
+.social-icon-modern.outlook:hover {
+    box-shadow: 0 8px 25px rgba(0, 120, 212, 0.6);
+    filter: brightness(1.15);
+}
+.social-icon-modern.gmail:hover {
+    box-shadow: 0 8px 25px rgba(234, 67, 53, 0.6);
+    filter: brightness(1.15);
+}
+
+.social-icon-modern:active {
+    transform: translateY(-2px) scale(1.05);
+}
 
 /* ########## MENU ########## */
 .mymenu {
@@ -1272,7 +1369,7 @@ a {
 
 <main class='mycontainer'>
     
-<a class="button44" href="mailto:ramykhaled202@gmail.com" target="_blank"><img src="https://lens-storage.storage.googleapis.com/png/0863a3b002c84f11a5a04dbd1c687794" alt="HTML tutorial" style="width:62px;height:62px; "></a>
+<a class="button44" href="/cdn-cgi/l/email-protection#1f6d7e726674777e737a7b2d2f2d5f78727e7673317c7072" target="_blank"><img src="https://lens-storage.storage.googleapis.com/png/0863a3b002c84f11a5a04dbd1c687794" alt="HTML tutorial" style="width:62px;height:62px; "></a>
 
 	
 	<div class="bird-container bird-container--one">
@@ -1309,20 +1406,18 @@ a {
 <div class='myphoto'></div>
 <div class='mylogo'></div>
 <div class='mydesc'><span id='typed'></span></div> 
-<ul class='mysocial'>
-
-<a class="button44" href="https://www.facebook.com/Ramykhaled007/" target="_blank"><img src="https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-facebook-social-media-icon-png-image_6315968.png" alt="HTML tutorial" style="width:42px;height:42px; "></a>&nbsp;&nbsp;
-<a class="button44" href="https://twitter.com/ramykha007" target="_blank"><img src="https://up6.cc/2024/01/170671013914931.png" alt="HTML tutorial" style="width:47px;height:47px; "></a>&nbsp;&nbsp;
-<a class="button44"href="https://www.instagram.com/ramykha007" target="_blank"><img src="https://j.top4top.io/p_2688y6rmb1.png" alt="HTML tutorial" style="width:47px;height:47px; "></a>&nbsp;&nbsp;
-<a class="button44" href="https://wa.me/201126106073" target="_blank"><img src="https://up6.cc/2024/01/170670946501712.png" alt="HTML tutorial" style="width:55px;height:55px; "></a>&nbsp;&nbsp;
-<a class="button44" href="https://t.me/ramykha007" target="_blank"><img src="https://up6.cc/2024/01/170670946503253.png" alt="HTML tutorial" style="width:42px;height:42px; "></a>&nbsp;&nbsp;
-<a class="button44" href="https://www.youtube.com/channel/UCOReH1Y6MTuLNcUv6Hj8ykw" target="_blank"><img src="https://up6.cc/2024/02/170683786658282.png" alt="HTML tutorial" style="width:47px;height:47px; "></a>&nbsp;&nbsp;
-<a class="button44"href="https://www.linkedin.com/in/ramadan-khaled-480810144" target="_blank"><img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-linkedin-512.png" alt="HTML tutorial" style="width:42px;height:42px; "></a>&nbsp;&nbsp;
-<a class="button44" href="https://www.paypal.com/paypalme/kamatcho" target="_blank"><img src="https://up6.cc/2024/02/170683786655691.png" alt="HTML tutorial" style="width:42px;height:42px; "></a>&nbsp;&nbsp;
-<a class="button44" href="mailto:ramykhaled202@outlook.com" target="_blank"><img src="https://up6.cc/2024/01/170671030644392.png" alt="HTML tutorial" style="width:42px;height:42px; "></a>&nbsp;&nbsp;
-<a class="button44" href="mailto:ramykhaled202@gmail.com" target="_blank"><img src="https://up6.cc/2024/01/170671025049691.png" alt="HTML tutorial" style="width:42px;height:42px; "></a>&nbsp;&nbsp;
-
-</ul>
+<div class="mysocial-modern">
+  <a class="social-icon-modern facebook" href="https://www.facebook.com/Ramykhaled007/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+  <a class="social-icon-modern twitter" href="https://twitter.com/ramykha007" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+  <a class="social-icon-modern instagram" href="https://www.instagram.com/ramykha007" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+  <a class="social-icon-modern whatsapp" href="https://wa.me/201126106073" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+  <a class="social-icon-modern telegram" href="https://t.me/ramykha007" target="_blank" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
+  <a class="social-icon-modern youtube" href="https://www.youtube.com/channel/UCOReH1Y6MTuLNcUv6Hj8ykw" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+  <a class="social-icon-modern linkedin" href="https://www.linkedin.com/in/ramadan-khaled-480810144" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+  <a class="social-icon-modern paypal" href="https://www.paypal.com/paypalme/kamatcho" target="_blank" title="PayPal"><i class="fab fa-paypal"></i></a>
+  <a class="social-icon-modern outlook" href="/cdn-cgi/l/email-protection#3745565a4e5c5f565b5253050705775842435b58585c1954585a" target="_blank" title="Outlook"><i class="fas fa-envelope"></i></a>
+  <a class="social-icon-modern gmail" href="/cdn-cgi/l/email-protection#0d7f6c607466656c6168693f3d3f4d6a606c6461236e6260" target="_blank" title="Gmail"><i class="fab fa-google"></i></a>
+</div>
 </section>
 <!-- ########## MENU RIGHT ########## -->
 <section class='mymenu menu-right'>
@@ -1483,23 +1578,26 @@ a {
 <br>
 <ul>
 <li><span style="color: green;">01126106073</span> - <span style="color: red;">01019719230</span> - <span style="color: purple;">01555061997</span></li>
-<li><span id='Email'></span></a>&nbsp;&nbsp; : ramykhaled202@gmail.com - ramykhaled202@outlook.com</li>
+<li><span id='Email'></span></a>&nbsp;&nbsp; : <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="7a081b170311121b161f1e484a483a1d171b131654191517">[email&#160;protected]</a> - <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="9ceefdf1e5f7f4fdf0f9f8aeacaedcf3e9e8f0f3f3f7b2fff3f1">[email&#160;protected]</a></li>
 <li><span id='Email'></span> </li>
 </ul>
-<ul class='mysocial'>
-    <a class="button44" href="mailto:ramykhaled202@gmail.com" target="_blank"><img src="https://www.braintools.cz/pool/braintools/article/brad_tablet_presenting_side_500_clr_21369.gif" alt="HTML tutorial" style="width:200px;height:230px; ">
-<a class="button44" href="https://www.facebook.com/Ramykhaled007/" target="_blank"><img src="https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-facebook-social-media-icon-png-image_6315968.png" alt="HTML tutorial" style="width:48px;height:48px; "></a>&nbsp;&nbsp;
-<a class="button44" href="https://twitter.com/ramykha007" target="_blank"><img src="https://up6.cc/2024/01/170671013914931.png" alt="HTML tutorial" style="width:48px;height:48px; "></a>&nbsp;&nbsp;
-<a class="button44"href="https://www.instagram.com/ramykha007" target="_blank"><img src="https://j.top4top.io/p_2688y6rmb1.png" alt="HTML tutorial" style="width:52px;height:52px; "></a>&nbsp;&nbsp;
-<a class="button44" href="https://wa.me/201126106073" target="_blank"><img src="https://up6.cc/2024/01/170670946501712.png" alt="HTML tutorial" style="width:48px;height:48px; "></a>&nbsp;&nbsp;
-<a class="button44" href="https://t.me/ramykha007" target="_blank"><img src="https://up6.cc/2024/01/170670946503253.png" alt="HTML tutorial" style="width:48px;height:48px; "></a>&nbsp;&nbsp;
-<a class="button44" href="https://www.youtube.com/channel/UCOReH1Y6MTuLNcUv6Hj8ykw" target="_blank"><img src="https://up6.cc/2024/02/170683786658282.png" alt="HTML tutorial" style="width:47px;height:47px; "></a>&nbsp;&nbsp;
-<a class="button44"href="https://www.linkedin.com/in/ramadan-khaled-480810144" target="_blank"><img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-linkedin-512.png" alt="HTML tutorial" style="width:48px;height:48px; "></a>&nbsp;&nbsp;
-<a class="button44" href="https://www.paypal.com/paypalme/kamatcho" target="_blank"><img src="https://up6.cc/2024/02/170683786655691.png" alt="HTML tutorial" style="width:48px;height:48px; "></a>&nbsp;&nbsp;
-<a class="button44" href="mailto:ramykhaled202@outlook.com" target="_blank"><img src="https://up6.cc/2024/01/170671030644392.png" alt="HTML tutorial" style="width:48px;height:48px; "></a>&nbsp;&nbsp;
-<a class="button44" href="mailto:ramykhaled202@gmail.com" target="_blank"><img src="https://up6.cc/2024/01/170671025049691.png" alt="HTML tutorial" style="width:48px;height:48px; "></a>&nbsp;&nbsp;
-
-</ul>
+<div class="text-center mb-3" style="margin-top: 15px;">
+  <a href="mailto:ramykhaled202@gmail.com" target="_blank">
+    <img src="https://www.braintools.cz/pool/braintools/article/brad_tablet_presenting_side_500_clr_21369.gif" alt="Presentation" style="width:200px; height:auto; max-height:230px; border-radius:10px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
+  </a>
+</div>
+<div class="mysocial-modern" style="position: static; margin-top: 15px;">
+  <a class="social-icon-modern facebook" href="https://www.facebook.com/Ramykhaled007/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+  <a class="social-icon-modern twitter" href="https://twitter.com/ramykha007" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+  <a class="social-icon-modern instagram" href="https://www.instagram.com/ramykha007" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+  <a class="social-icon-modern whatsapp" href="https://wa.me/201126106073" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+  <a class="social-icon-modern telegram" href="https://t.me/ramykha007" target="_blank" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
+  <a class="social-icon-modern youtube" href="https://www.youtube.com/channel/UCOReH1Y6MTuLNcUv6Hj8ykw" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+  <a class="social-icon-modern linkedin" href="https://www.linkedin.com/in/ramadan-khaled-480810144" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+  <a class="social-icon-modern paypal" href="https://www.paypal.com/paypalme/kamatcho" target="_blank" title="PayPal"><i class="fab fa-paypal"></i></a>
+  <a class="social-icon-modern outlook" href="/cdn-cgi/l/email-protection#453724283c2e2d24292021777577052a3031292a2a2e6b262a28" target="_blank" title="Outlook"><i class="fas fa-envelope"></i></a>
+  <a class="social-icon-modern gmail" href="/cdn-cgi/l/email-protection#f48695998d9f9c95989190c6c4c6b49399959d98da979b99" target="_blank" title="Gmail"><i class="fab fa-google"></i></a>
+</div>
 </div>
 </div>
 </div>
@@ -1529,7 +1627,7 @@ a {
 <button class='reset-setting' id='Reset' onclick='ResetSetting()'>Reset Setting</button>
 </div>
 </section>
-<a class="button44" href="mailto:ramykhaled202@gmail.com" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/323/323324.png" alt="HTML tutorial" style="width:62px;height:62px; "></a>&nbsp;&nbsp;
+<a class="button44" href="/cdn-cgi/l/email-protection#097b686470626168656c6d3b393b496e64686065276a6664" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/323/323324.png" alt="HTML tutorial" style="width:62px;height:62px; "></a>&nbsp;&nbsp;
 </main>
 <div class="hwrap"><div class="hmove">
   <div class="hitem">All Copyrights Reserved © Ramy khaled 2020-2024</div>
@@ -1537,7 +1635,7 @@ a {
 </div></div>
 <!-- ########## SONG ########## -->
 <!-- ########## SETTING ########## -->
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
             function OpenSetting() {
                 document.getElementById("mysetting-control").innerHTML = "<button onclick='CloseSetting()'><i class='fas fa-times'></i></button>";
                 $('#mysetting-control button').addClass('mysetting-open');
@@ -1774,6 +1872,7 @@ _WidgetManager._SetDataContext([{'name': 'blog', 'data': {'blogId': '38022797307
 _WidgetManager._RegisterWidget('_BlogView', new _WidgetInfo('Blog1', 'main', document.getElementById('Blog1'), {'cmtInteractionsEnabled': false, 'navMessage': 'áíÓÊ åäÇß Ãí ãÔÇÑßÇÊ.', 'lightboxEnabled': true, 'lightboxModuleUrl': 'https://www.blogger.com/static/v1/jsbin/2074775514-lbx__ar.js', 'lightboxCssUrl': 'https://www.blogger.com/static/v1/v-css/368954415-lightbox_bundle_rtl.css'}, 'displayModeFull'));
 </script>
 
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447" integrity="sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ==" data-cf-beacon='{"version":"2024.11.0","token":"aff0469961fa439babcd156cc7fb9da9","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 <head>
 <audio autoplay="autoplay" hidden="hidden"> <source src="/ramy.mp3" type="audio/mp3""> </source></audio>
@@ -1806,3 +1905,5 @@ _WidgetManager._RegisterWidget('_BlogView', new _WidgetInfo('Blog1', 'main', doc
 
 </head>
 </html>
+
+
